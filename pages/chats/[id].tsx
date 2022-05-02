@@ -5,7 +5,7 @@ import Seo from "../../components/seo";
 
 const ChatDetail: NextPage = () => {
   return (
-    <Layout canGoBack title="Steve">
+    <Layout canGoBack title="채팅">
       <Seo title="채팅" />
       <div className="py-10 pb-16 px-4 space-y-4">
         <Message message="Hi how much are you selling them for?" />
