@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 
 const Profile: NextPage = () => {
   return (
-    <Layout hasTabBar title="나의 캐럿">
+    <Layout hasTabBar title="마이페이지">
       <div className="px-4">
         <div className="flex items-center mt-4 space-x-3">
           <div className="w-16 h-16 bg-slate-500 rounded-full" />
