@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import Layout from "../../components/layout";
+import Seo from "../../components/seo";
 
 const Profile: NextPage = () => {
   return (
     <Layout hasTabBar title="마이페이지">
+      <Seo title="마이페이지" />
       <div className="px-4">
         <div className="flex items-center mt-4 space-x-3">
           <div className="w-16 h-16 bg-slate-500 rounded-full" />

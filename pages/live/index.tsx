@@ -2,10 +2,12 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import FloatingButton from "../../components/floating-button";
 import Layout from "../../components/layout";
+import Seo from "../../components/seo";
 
 const Live: NextPage = () => {
   return (
     <Layout hasTabBar title="라이브">
+      <Seo title="라이브" />
       <div className=" divide-y-[1px] space-y-4">
         {[1, 1, 1, 1, 1, 1, 1].map((_, i) => (
           <Link key={i} href={`/live/${i}`}>

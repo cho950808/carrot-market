@@ -3,10 +3,12 @@ import Button from "../../components/button";
 import Input from "../../components/input";
 import Layout from "../../components/layout";
 import TextArea from "../../components/textarea";
+import Seo from "../../components/seo";
 
 const Create: NextPage = () => {
   return (
     <Layout canGoBack title="Go Live">
+      <Seo title="라이브" />
       <form className=" space-y-4 py-10 px-4">
         <Input required label="Name" name="name" type="text" />
         <Input

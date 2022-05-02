@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Item from "../../components/item";
 import Layout from "../../components/layout";
+import Seo from "../../components/seo";
 
 const Sold: NextPage = () => {
   return (
     <Layout title="판매내역" canGoBack>
+      <Seo title="판매내역" />
       <div className="flex flex-col space-y-5 pb-10  divide-y">
         {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
           <Item

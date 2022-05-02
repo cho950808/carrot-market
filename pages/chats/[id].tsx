@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Layout from "../../components/layout";
 import Message from "../../components/message";
+import Seo from "../../components/seo";
 
 const ChatDetail: NextPage = () => {
   return (
     <Layout canGoBack title="Steve">
+      <Seo title="채팅" />
       <div className="py-10 pb-16 px-4 space-y-4">
         <Message message="Hi how much are you selling them for?" />
         <Message message="I want ￦20,000" reversed />

@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Button from "../../components/button";
 import Layout from "../../components/layout";
+import Seo from "../../components/seo";
 
 const ItemDetail: NextPage = () => {
   return (
     <Layout canGoBack>
+      <Seo title="iPhone 14" />
       <div className="px-4  py-4">
         <div className="mb-8">
           <div className="h-96 bg-slate-300" />

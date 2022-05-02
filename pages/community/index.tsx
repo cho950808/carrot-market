@@ -2,10 +2,12 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import FloatingButton from "../../components/floating-button";
 import Layout from "../../components/layout";
+import Seo from "../../components/seo";
 
 const Community: NextPage = () => {
   return (
     <Layout hasTabBar title="커뮤니티">
+      <Seo title="커뮤니티" />
       <div className="space-y-4 divide-y-[2px]">
         {[1, 2, 3, 4, 5, 6].map((_, i) => (
           <Link key={i} href={`/community/${i}`}>

@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Layout from "../../components/layout";
 import Message from "../../components/message";
+import Seo from "../../components/seo";
 
 const Stream: NextPage = () => {
   return (
     <Layout canGoBack>
+      <Seo title="라이브" />
       <div className="py-10 px-4  space-y-4">
         <div className="w-full rounded-md shadow-sm bg-slate-300 aspect-video" />
         <div className="mt-5">
