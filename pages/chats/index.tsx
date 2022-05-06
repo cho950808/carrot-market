@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
+import Layout from "@components/layout";
+import Seo from "@components/seo";
 
 const Chats: NextPage = () => {
   return (

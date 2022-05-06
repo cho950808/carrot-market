@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
-import Layout from "../../components/layout";
-import TextArea from "../../components/textarea";
-import Seo from "../../components/seo";
+import Layout from "@components/layout";
+import TextArea from "@components/textarea";
+import Seo from "@components/seo";
 
 const CommunityPostDetail: NextPage = () => {
   return (

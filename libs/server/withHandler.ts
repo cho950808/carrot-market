@@ -1,15 +1,19 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import client from "../../libs/server/client";
 
-
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
+export default function withHandler(
+  method: "GET" | "POST" | "DELETE",
+  fn: (req: NextApiRequest, res: NextApiResponse) => void
 ) {
-  if (req.method !== "POST") {
-    res.status(401).end();
-  }
-  console.log(req.body);
-  res.status(200).end();
-  // res.json({ ok: true });
+  // nextjs에서 실행될 function을 맞춤 설정
+  return async function (req: NextApiRequest, res: NextApiResponse) {
+    if (req.method !== "POST") {
+      return res.status(405).end();
+    }
+    try {
+      await fn(req, res);
+    } catch (error) {
+      console.log(error);
+      return res.status(500).json({ error });
+    }
+  };
 }

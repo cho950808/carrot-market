@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
-import Button from "../../components/button";
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
+import Button from "@components/button";
+import Layout from "@components/layout";
+import Seo from "@components/seo";
 
 const ItemDetail: NextPage = () => {
   return (

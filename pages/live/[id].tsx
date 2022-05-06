@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
-import Layout from "../../components/layout";
-import Message from "../../components/message";
-import Seo from "../../components/seo";
+import Layout from "@components/layout";
+import Message from "@components/message";
+import Seo from "@components/seo";
 
 const Stream: NextPage = () => {
   return (
