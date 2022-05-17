@@ -92,7 +92,7 @@ const Profile: NextPage = () => {
           <div className="flex space-x-4 items-center">
             <div className="w-12 h-12 rounded-full bg-slate-500" />
             <div>
-              <h4 className="text-sm font-bold text-gray-800">니꼬</h4>
+              <h4 className="text-sm font-bold text-gray-800">조재영</h4>
               <div className="flex items-center">
                 <svg
                   className="text-yellow-400 h-5 w-5"
